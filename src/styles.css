@@ -24,3 +24,18 @@
     --fw: 700;
 }
 
+body {
+    background-color: var(--main-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    height: 85%;
+}

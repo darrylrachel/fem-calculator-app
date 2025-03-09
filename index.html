@@ -19,14 +19,43 @@
     <div class="container">
         <div class="calculator">
             <div class="calculator__header">
-                <div class="header__logo"></div>
-                <div class="header__theme"></div>
+                <div class="header__logo">
+                    <p>calc</p>
+                </div>
+                <div class="header__theme">
+                    theme switcher
+                </div>
             </div>
             <div class="calculator__display">
-                <div class="header__screen"></div>
+                <div class="header__screen">
+                    <p class="result">399,981</p>
+                </div>
             </div>
-            <div class="calculator__keypad">
+
+                <div class="calculator__keypad">
                 <!-- figure layout technique for keypad -->
+                <div class="keypad__row">
+                    <button class="keypad__key" value="7">7</button>
+                    <button class="keypad__key" value="8">8</button>
+                    <button class="keypad__key" value="9">9</button>
+                    <button class="keypad__key" value="del">DEL</button>
+                </div>
+                <div class="keypad__row">
+                    <button class="keypad__key" value="4">4</button>
+                    <button class="keypad__key" value="5">5</button>
+                    <button class="keypad__key" value="6">6</button>
+                    <button class="keypad__key" value="plus">+</button>
+                </div>
+                <div class="keypad__row">
+                    <button class="keypad__key" value="1">1</button>
+                    <button class="keypad__key" value="2">2</button>
+                    <button class="keypad__key" value="3">3</button>
+                    <button class="keypad__key" value="minus">-</button>
+                </div>
+                <div class="keypad__row last-row">
+                    <button class="keypad__key reset" value="7reset">RESET</button>
+                    <button class="keypad__key equal" value="equal">=</button>
+                </div>
             </div>
         </div>
     </div>

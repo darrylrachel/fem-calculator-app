@@ -20,12 +20,19 @@
     --dark-blue: hsl(221, 14%, 31%);
     --white: hsl(0, 0%, 100%);
     --fs-numbers: 32px;
-    --ff-league-spartan: ;
     --fw: 700;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--main-background);
+    font-family: "League Spartan", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,8 +41,106 @@ body {
 }
 
 .container {
-    width: 500px;
-    border: 1px solid aqua;
+    width: 450px;
+    /*border: 1px solid aqua;*/
     border-radius: 10px;
-    height: 85%;
+    /*height: 85%;*/
+    padding: 20px;
+    /*background-color: var(--toggle-keypad-background);*/
+}
+
+.calculator__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo p {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.calculator__display {
+    border-radius: 10px;
+    background-color: var(--screen-background);
+    padding: 28px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.header__screen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.header__screen p {
+    color: var(--white);
+    font-size: var(--fs-numbers);
+    margin: 0;
+    font-weight: var(--fw);
+}
+
+.calculator__keypad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 274px;
+    background-color: var(--screen-background);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.keypad__key {
+    background-color: var(--orange-key-background);
+    color: var(--dark-blue);
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: var(--fw);
+    border: none;
+    -webkit-box-shadow: inset -1px -3px 2px 0px rgba(178, 162, 150, 1);
+    -moz-box-shadow: inset -1px -3px 2px 0px rgba(178, 162, 150, 1);
+    box-shadow: inset -1px -3px 2px 0px rgba(178, 162, 150, 1);
+}
+
+.keypad__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.last-row {
+    /*justify-content: space-between;*/
+}
+
+.keypad__key[value='del'] {
+    color: white;
+    padding: 12px 25px;
+    background-color: var(--blue-key-background);
+    -webkit-box-shadow: inset -1px -3px 2px 0px rgba(66, 78, 116, 1);
+    -moz-box-shadow: inset -1px -3px 2px 0px rgba(66, 78, 116, 1);
+    box-shadow: inset -1px -3px 2px 0px rgba(66, 78, 116, 1);
+}
+.reset, .equal {
+    padding: 15px 70px;
+}
+
+.equal {
+    background-color: var(--red-key-background);
+    -webkit-box-shadow: inset -1px -3px 2px 0px rgba(144, 35, 23, 1);
+    -moz-box-shadow: inset -1px -3px 2px 0px rgba(144, 35, 23, 1);
+    box-shadow: inset -1px -3px 2px 0px rgba(144, 35, 23, 1);
+    color: var(--white);
+}
+
+.reset {
+    background-color: var(--blue-key-background);
+    -webkit-box-shadow: inset -1px -3px 2px 0px rgba(66, 78, 116, 1);
+    -moz-box-shadow: inset -1px -3px 2px 0px rgba(66, 78, 116, 1);
+    box-shadow: inset -1px -3px 2px 0px rgba(66, 78, 116, 1);
+    color: var(--white);
 }
